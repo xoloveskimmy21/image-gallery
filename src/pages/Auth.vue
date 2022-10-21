@@ -18,9 +18,9 @@ const googleAuth = async () => await store.dispatch('login')
 
 // check if user is logged in, if so redirect to home page
 watchEffect(() => {
-  if (store.getters['isAuthenticated']) {
-    router.push('/')
-  }
+    if (store.getters['email']) {
+        router.push('/')
+    }
 })
 </script>
 <template>
