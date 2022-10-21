@@ -229,7 +229,7 @@ const getters = {
     uploadProgress: state => state.uploadProgress,
     addProduct: state => state.addProduct,
     openProduct: state => state.openProduct,
-    openProductData: state => state.openProductData,
+    openProductData: state => state.openProductData
 }
 
 export const store = createStore({
