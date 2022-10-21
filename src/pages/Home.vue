@@ -10,7 +10,7 @@ const router = useRouter()
 
 // check if user is logged in, if so redirect to home page
 watchEffect(() => {
-    if (!store.getters['isAuthenticated']) {
+    if (!store.getters['email']) {
         router.push('/auth')
     }
 })
