@@ -52,12 +52,15 @@ const p = defineProps({
         overflow: hidden;
         position: relative;
         cursor: pointer;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background: #fafafa;
 
         .img {
             width: 100%;
             height: auto;
             max-height: 400px;
-            background: #333;
 
             img {
                 width: auto;
