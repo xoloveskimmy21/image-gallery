@@ -10,8 +10,7 @@ const router = useRouter()
 const googleAuth = async () => await store.dispatch('login')
   .then(e => {
     if (e === true) {
-      // router.push('/')
-      console.log('login success')
+      router.push('/')
     } else {
       setTimeout(() => alert(e ?? 'Failed to login'), 0)
     }
