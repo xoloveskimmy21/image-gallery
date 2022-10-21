@@ -36,10 +36,8 @@ const openFilePicker = () => {
                 Kimmy Store
             </div>
             <div class="actions">
-                <button @click="store.dispatch('openAddProduct')">Add Product</button>
+                <button v-if="store.state.email == 'xoloveskimmy@gmail.com'" @click="store.dispatch('openAddProduct')">Add Product</button>
                 <button @click="logout">Logout</button>
-                <!-- <button @click="openFilePicker">Upload</button>
-                <input id="upload" type="file" @change="upload" class="hidden" /> -->
             </div>
         </div>
     </header>
